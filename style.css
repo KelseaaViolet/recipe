@@ -1,0 +1,386 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Font Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-bottom: 2px solid #F2F2F2;
+	font-family: "Bebas Neue", sans-serif;
+}
+
+nav a {
+	font-size: 20px;
+}
+
+nav ul li {
+	list-style: none;
+	text-align: center;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+	font-family: "Bebas Neue", sans-serif;
+}
+
+
+img {
+	width: 100%;
+}
+
+span {
+	padding: 0 70px 0 70px;
+	background-color: #EB5428;
+}
+
+.search {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+input {
+	padding-top: 5px;
+	font-family: "Montserrat", sans-serif;
+	border: 1px solid #EB5428;
+}
+
+
+.magnify {
+	background-color: #EB5428;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
+h1{
+	margin-top: 10px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px;
+	font-family: "Bebas Neue", sans-serif;
+}
+
+h2 {
+	margin-top: 20px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	font-family: "Bebas Neue", sans-serif;
+}
+
+
+
+
+dl {
+	display: flex;
+	
+}
+
+dt {
+	padding-left: 10px;
+	font-weight: bold;
+	font-family: "Bebas Neue", sans-serif;
+}
+
+dd {
+	padding-left: 10px;
+	font-family: "Montserrat", sans-serif;
+}
+
+p {
+	font-size: 16px;
+	font-family: "Montserrat", sans-serif;
+}
+
+.description {
+	padding: 0 12px 0 12px;
+}
+
+.ingredients ul {
+	margin-top: 20px;
+	padding-left: 30px;
+	list-style: disc;
+}
+
+
+.directions {
+	padding-left: 20px;
+	list-style: decimal;
+}
+
+ol li{
+	margin-top: 20px;
+}
+
+
+
+.shortcuts {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px 0 20px;
+	margin-top: 20px;
+	font-weight: bold;
+	text-align: center;
+	background-color: rgba(122, 191, 191, .5) ;
+}
+
+a {
+	text-decoration: none;
+	color: #EB5428;
+
+}
+.food {
+	display: none;
+}
+.side {
+	background: #7ABFBF;
+}
+
+main {
+	background-color: #F2F2F2;
+}
+
+.side img {
+	width: 60%;
+	padding-bottom: 10px;
+}
+
+
+.container {
+	margin-top: 20px;
+	padding: 0 10px 0 10px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+.rating {
+	padding-left: 30px;
+	font-weight: bold;
+}
+
+.social  {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+footer {
+	text-align: center;
+	font-weight: bold;
+	font-family: "Bebas Neue", sans-serif;
+}
+
+footer img {
+	margin-top: 10px;
+	width: 50%;
+}
+
+h3 {
+	font-weight: bold;
+	font-family: "Bebas Neue", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+	
+	.hamburger {
+		display: none;
+	}
+	nav {
+		justify-content: left;
+	}
+
+	.avatar {
+		padding-left: 60%;
+	}
+
+	.search {
+		position: absolute;
+		top: 10px;
+		right: 225px;
+	}
+
+	.string {
+		display: flex;
+	}
+
+	a {
+		padding: 10px;
+	}
+
+	h1 {
+		text-align: left;
+		padding-left: 20px;
+	}
+
+	 dl {
+		justify-content: center;
+	}
+
+	.food {
+		display: flex;
+		text-align: center;
+	}
+
+	.ingredients {
+		float: left;
+	}
+
+	
+	h2 {
+		font-size: 40px;
+	}
+
+	.wrapper {
+		display: flex;
+		flex-direction: row-reverse;
+		padding: 20px 10px 0 20px;
+	}
+
+	.wrapper2 {
+		float: left;
+	}
+
+
+}
+
+@media screen and (min-width: 1200px) {
+	.food {
+		position: absolute;
+		padding-left: 15%;
+		font-weight: bold;
+		left: 420px;
+		top: -10px;
+		width: 25%;
+		font-size: 9px;
+	}
+
+	.avatar {
+		padding-left: 80%;
+	}
+
+	.search {
+		position: absolute;
+		left: 230px;
+		top: 80px;
+	}
+
+	h1 {
+		text-align: center;
+		margin-top: 110px;
+	}
+
+	.street-wrapper {
+		display: flex;
+		
+		margin-top: 80px;
+		width: 100%;
+	
+	}
+
+	.shortcuts {
+		
+		display: block;
+		background: #F2F2F2;
+		
+	}
+
+	.main-image {
+
+		width: 10%;
+
+	}
+
+	.details {
+		background-color: #000000;
+		color: #7ABFBF;
+	}
+
+	h2 {
+		font-size: 45px;
+	}
+
+	dl {
+		display: block;
+		padding-bottom: 20px;
+	}
+
+	dt {
+		text-align: center;
+	}
+
+	dl {
+		text-align: center;
+	}
+
+	.dets {
+		display: flex;
+		justify-content: space-evenly;
+		margin-top: 10px;
+	}
+
+	
+	.side {
+		margin-top: 100px;
+	}
+
+	.ingredients {
+		padding-left: 130px;
+	}
+	 .directions  {
+		text-align: center;
+		
+	 }
+
+	 ol {
+		list-style: none;
+	 }
+
+	.wrapper2 {
+		display: block;
+	}
+
+	.side img {
+		width: 30%;
+		margin-left: 80px;
+	}
+
+	footer {
+		margin-right: 30%;
+	}
+
+
+
+	
+}
