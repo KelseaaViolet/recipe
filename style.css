@@ -318,7 +318,7 @@ h3 {
 
 	.main-image {
 
-		width: 10%;
+		width: 50%;
 
 	}
 
@@ -380,7 +380,24 @@ h3 {
 		margin-right: 30%;
 	}
 
+	.main-image {
+		width: 50%;
+	}
 
+}
 
-	
+@media print {
+	html {
+		margin: 0.5;
+	}
+
+	body {
+		font-style: Georgia;
+	}
+	img {
+		display: none;
+	}
+	nav {
+		display: none;
+	}
 }
